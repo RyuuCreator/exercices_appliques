@@ -8,7 +8,7 @@ body {
 	background: #d0d0d0;
 }
 
-/* CENTER LES SKILL BARS */
+/* CENTER SKILL BARS */
 
 section {
 	display: flex;
@@ -18,7 +18,7 @@ section {
 	padding: 0;
 }
 
-/* WIDTH (LONGUEUR) DES SKILLS BARS */
+/* WIDTH SKILL BARS */
 
 section article {
 	align-self: center;
@@ -27,7 +27,7 @@ section article {
 }
 
 /* BARS */
-/* FONT-SIZE (HAUTEUR) DES SKILLS BARS */
+/* FONT-SIZE SKILL BARS */
 
 .chart {
 	font-size: 0.25em;
@@ -197,7 +197,7 @@ section article {
 	box-shadow: 0em 0em 2em #7276ac;
 }
 
-/* POURCENTAGE BARS GLOBAL */
+/* PERCENTAGE GLOBAL BARS */
 
 .bar-10 .growing-bar {
 	width: 10%;
@@ -249,7 +249,7 @@ section article {
     animation: Animate-100 4s;
 }
 
-/* POURCENTAGE CARRE DROIT */
+/* PERCENTAGE RIGHT SQUARE */
 
 .bar-10  .side-c {
 	animation: Animate-side-10 4s;
@@ -291,7 +291,7 @@ section article {
 	animation: Animate-side-100 4s;
 }
 
-/* ANIMATION BARS */
+/* ANIMATE BARS */
 
 @keyframes Animate-10 {
     from {
@@ -383,7 +383,7 @@ section article {
     }
 }
 
-/* ANIMATION CARRE DROITE */
+/* ANIMATE RIGHT SQUARE */
 
 @keyframes Animate-side-10 {
     from {
