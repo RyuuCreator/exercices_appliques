@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/form_2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form class="style_form" method="POST" action="contact_form_handler.php">
+        <div class="card">
+            <div class="card_body">
+                <div class="form_header">
+                    <h3 class="h3"><i class="far fa-envelope red"></i> Écrivez-moi :</h3>
+                </div>
+                <span class="input input--fumi">
+                    <input class="input__field input__field--fumi" type="text" id="form_name" name="name" minlength="3"
+                        required>
+                    <label class="input__label input__label--fumi" for="form_name">
+                        <i class="far fa-user icon icon--fumi"></i>
+                        <span class="input__label-content input__label-content--fumi">Votre nom</span>
+                    </label>
+                </span>
+                <label id="form_name-error" class="error" for="form_name"></label>
+                <span class="input input--fumi">
+                    <input class="input__field input__field--fumi" type="text" id="form_pseudo" name="pseudo" minlength="3" required>
+                    <label class="input__label input__label--fumi" for="form_pseudo">
+                        <i class="far fa-id-badge icon icon--fumi"></i>
+                        <span class="input__label-content input__label-content--fumi">Votre pseudo</span>
+                    </label>
+                </span>
+                <label id="form_pseudo-error" class="error" for="form_pseudo"></label>
+                <span class="input input--fumi">
+                    <input class="input__field input__field--fumi" type="text" id="form_email" name="email" required>
+                    <label class="input__label input__label--fumi" for="form_email">
+                        <i class="far fa-envelope icon icon--fumi"></i>
+                        <span class="input__label-content input__label-content--fumi">Votre e-mail</span>
+                    </label>
+                </span>
+                <label id="form_email-error" class="error" for="form_email"></label>
+                <span class="input input--fumi">
+                    <input class="input__field input__field--fumi" type="text" id="form_subject" name="subject"
+                        minlength="3 " required>
+                    <label class="input__label input__label--fumi" for="form_subject">
+                        <i class="far fa-bookmark icon icon--fumi"></i>
+                        <span class="input__label-content input__label-content--fumi">Objet du mail</span>
+                    </label>
+                </span>
+                <label id="form_subject-error" class="error" for="form_subject"></label>
+                <span class="input input--fumi">
+                    <textarea class="input__field input__field--fumi" type="text" id="form_text" name="message"
+                        required></textarea>
+                    <label class="input__label input__label--fumi" for="form_text">
+                        <i class="far fa-edit icon icon--fumi"></i>
+                        <span class="input__label-content input__label-content--fumi">Votre message</span>
+                    </label>
+                </span>
+                <label id="form_text-error" class="error" for="form_text"></label>
+                <div class="text_center">
+                    <button type="submit" value="Submit" class="btn_envoyer">Envoyer</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/contact_form.js"></script>
+    <script src="./assets/js/classie.js"></script>
+    <script>
+        (function () {
+            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+            if (!String.prototype.trim) {
+                (function () {
+                    // Make sure we trim BOM and NBSP
+                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                    String.prototype.trim = function () {
+                        return this.replace(rtrim, '');
+                    };
+                })();
+            }
+
+            [].slice.call(document.querySelectorAll('textarea.input__field, input.input__field')).forEach(function (inputEl) {
+                // in case the input is already filled..
+                if (inputEl.value.trim() !== '') {
+                    classie.add(inputEl.parentNode, 'input--filled');
+                }
+
+                // events:
+                inputEl.addEventListener('focus', onInputFocus);
+                inputEl.addEventListener('blur', onInputBlur);
+            });
+
+            function onInputFocus(ev) {
+                classie.add(ev.target.parentNode, 'input--filled');
+            }
+
+            function onInputBlur(ev) {
+                if (ev.target.value.trim() === '') {
+                    classie.remove(ev.target.parentNode, 'input--filled');
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>

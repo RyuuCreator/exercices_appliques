@@ -1,0 +1,232 @@
+/* IMAGE DE PROFIL */ 
+
+.imgProfilDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgProfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    border: 4px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.input_img {
+    overflow: hidden;
+    margin: 0.5rem;
+    width: calc(100% - 10px);
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+.btn_download {
+    color: black;
+    text-decoration: none;
+    background-color: #E5E5E5;
+    border: 1px solid #4F4F4F;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.testInput {
+    padding: 0.5rem;
+}
+
+/* pdf */ 
+
+.input_pdf {
+    overflow: hidden;
+    margin: 0.5rem;
+    height: 100vh;
+    width: calc(100% - 10px);
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+}
+
+/* SIGNATURE */
+
+#canvas{
+    width:200px;
+    height:150px;
+    border:1px solid #000;
+
+}
+#capture{ 
+    border:1px solid grey;
+    width:200px;
+    height:150px;
+}
+
+.bloc-mise-en-page{
+    margin:10px;
+}
+
+/* SECTION */ 
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.contour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.h1 {
+    font-weight: normal;
+}
+
+.h2 {
+    text-decoration: underline;
+}
+
+.input_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.20rem;
+    width: calc(100% - 10px);
+}
+
+.input_group2 {
+    flex-wrap: wrap;
+    margin: 0.5rem;
+    width: calc(100% - 10px);
+}
+
+label {
+    margin-bottom: 0 !important;
+}
+
+.input_group_prepend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+
+.red {
+    color: #ff3333;
+}
+
+.form_control {
+    padding: 0.53rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 0 5px 5px 0;
+}
+
+.form_control2 {
+    border-radius: 5px;
+}
+
+:focus-visible {
+    outline: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #fff inset !important;
+    -moz-box-shadow: 0 0 0 100px #fff inset !important;
+    box-shadow: 0 0 0 100px #fff inset !important;
+}
+
+/* ALERT INVALIDE */
+
+.form_control.is_invalid {
+    border-color: #dc3545;
+    background-image: url("https://img.icons8.com/emoji/48/000000/exclamation-mark-emoji.png");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.red.is_invalid {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.invalid_feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #dc3545;
+}
+
+.is_invalid~.invalid_feedback {
+    display: block;
+}
+
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert_success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert_warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.alert_danger {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+/* BOUTTON */
+
+.div_btn {
+    margin: 1rem 0;
+}
+
+.btn_submit {
+    border: 1px solid #aaaaaa;
+    color: #303030;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn_lien {
+    text-decoration: none;
+    color: black;
+}
+
+.btn_annuler {
+    color: white;
+    background-color: #dc3545;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.btn_annuler:hover {
+    background-color: #bd2130;
+}

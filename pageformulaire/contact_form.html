@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="./tarteaucitron.js-1.9.3/tarteaucitron.js"></script>
+    <script src="./assets/js/cookietarteaucitron.js"></script>
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form class="style_form" method="POST" action="contact_form_handler.php">
+        <div class="card">
+            <div class="card_body">
+                <div class="form_header">
+                    <h3 class="h3"><i class="far fa-envelope red"></i> Écrivez-moi :</h3>
+                </div>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-user red input_group_text"></i>
+                    </label>
+                    <input type="text" id="form_name" class="form_control" name="name" placeholder="Votre nom"
+                        minlength="3" required>
+                </div>
+                <label id="form_name-error" class="error" for="form_name"></label>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-id-badge red input_group_text"></i>
+                    </label>
+                    <input type="text" id="form_pseudo" class="form_control" name="pseudo" placeholder="Votre pseudo"
+                        minlength="3" required>
+                </div>
+                <label id="form_pseudo-error" class="error" for="form_pseudo"></label>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="fas fa-birthday-cake red input_group_text"></i>
+                    </label>
+                    <input type="date" id="form_birthday" class="form_control" name="anniversaire" required>
+                </div>
+                <label id="form_birthday-error" class="error" for="form_birthday"></label>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-envelope red input_group_text"></i>
+                    </label>
+                    <input type="email" id="form_email" class="form_control" name="email" placeholder="Votre email"
+                        required>
+                </div>
+                <label id="form_email-error" class="error" for="form_email"></label>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-bookmark red input_group_text"></i>
+                    </label>
+                    <input type="text" id="form_subject" class="form_control" name="subject" placeholder="Objet"
+                        minlength="3 " required>
+                </div>
+                <label id="form_subject-error" class="error" for="form_subject"></label>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-check-circle red input_group_text"></i>
+                    </label>
+                    <div class="form_control">
+                        <input type="radio" name="choix" value="particulier">Particulier
+                        <input type="radio" name="choix" value="professionnel">Professionnel
+                    </div>
+                </div>
+                <div class="input_group">
+                    <label class="input_group_prepend">
+                        <i class="far fa-edit red input_group_text"></i>
+                    </label>
+                    <textarea type="text" id="form_text" class="form_control" name="message" placeholder="Votre message"
+                        required></textarea>
+                </div>
+                <label id="form_text-error" class="error" for="form_text"></label>
+                <div class="text_center">
+                    <button type="submit" value="Submit" class="btn_envoyer">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="./assets/js/tarteaucitron.js"></script>
+    <script src="./assets/js/contact_form.js"></script>
+</body>
+
+</html>
