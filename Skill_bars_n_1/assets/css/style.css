@@ -1,5 +1,5 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1em;
@@ -54,12 +54,14 @@ section article {
 	background-color: #fefefe4d;
 }
 
-.bar .face.side-a, .bar .face.side-b, .bar .face.side-c {
-  	width: 2em;
+.bar .face.side-a,
+.bar .face.side-b,
+.bar .face.side-c {
+	width: 2em;
 }
 
 .bar .side-a {
-  	transform: rotateX(90deg) rotateY(-90deg) translateX(2em) translateY(1em) translateZ(1em);
+	transform: rotateX(90deg) rotateY(-90deg) translateX(2em) translateY(1em) translateZ(1em);
 }
 
 .bar .side-b {
@@ -75,24 +77,25 @@ section article {
 }
 
 .bar .side-0 {
-  	transform: rotateX(90deg) rotateY(0) translateX(0) translateY(1em) translateZ(-1em);
+	transform: rotateX(90deg) rotateY(0) translateX(0) translateY(1em) translateZ(-1em);
 }
 
 .bar .side-1 {
-  	transform: rotateX(90deg) rotateY(0) translateX(0) translateY(1em) translateZ(3em);
+	transform: rotateX(90deg) rotateY(0) translateX(0) translateY(1em) translateZ(3em);
 }
 
 .bar .top {
-  	transform: rotateX(0deg) rotateY(0) translateX(0em) translateY(4em) translateZ(2em);
+	transform: rotateX(0deg) rotateY(0) translateX(0em) translateY(4em) translateZ(2em);
 }
 
 .bar .floor {
-  	box-shadow: 0 0.1em 0.6em #0000004d, 0.6em -0.5em 3em #0000004d, 1em -1em 8em #fefefe;
+	box-shadow: 0 0.1em 0.6em #0000004d, 0.6em -0.5em 3em #0000004d, 1em -1em 8em #fefefe;
 }
 
 /* COLOR BARS GLOBAL */
 
-.bar .side-a, .growing-bar {
+.bar .side-a,
+.growing-bar {
 	background-color: #80808099;
 	width: 100%;
 	height: 2em;
@@ -100,7 +103,8 @@ section article {
 
 /* COLOR BARS HTML */
 
-.bar.html .side-a, .bar.html .growing-bar {
+.bar.html .side-a,
+.bar.html .growing-bar {
 	background-color: #e4602799;
 }
 
@@ -119,7 +123,8 @@ section article {
 
 /* COLOR BARS CSS */
 
-.bar.css .side-a, .bar.css .growing-bar {
+.bar.css .side-a,
+.bar.css .growing-bar {
 	background-color: #38a9d599;
 }
 
@@ -138,7 +143,8 @@ section article {
 
 /* COLOR BARS JAVASCRIPT */
 
-.bar.js .side-a , .bar.js .growing-bar {
+.bar.js .side-a,
+.bar.js .growing-bar {
 	background-color: #ead41c99;
 }
 
@@ -157,7 +163,8 @@ section article {
 
 /* COLOR BARS PHP */
 
-.bar.php .side-a, .bar.php .growing-bar {
+.bar.php .side-a,
+.bar.php .growing-bar {
 	background-color: #7276ac99;
 }
 
@@ -177,7 +184,7 @@ section article {
 /* COLOR BARS MYSQL */
 
 .bar.mysql .side-a {
-	background-color: #006f8899;	
+	background-color: #006f8899;
 }
 
 .bar.mysql .growing-bar {
@@ -201,276 +208,276 @@ section article {
 
 .bar-10 .growing-bar {
 	width: 10%;
-    animation: Animate-10 4s;
+	animation: Animate-10 4s;
 }
 
 .bar-20 .growing-bar {
 	width: 20%;
-    animation: Animate-20 4s;
+	animation: Animate-20 4s;
 }
 
 .bar-30 .growing-bar {
 	width: 30%;
-    animation: Animate-30 4s;
+	animation: Animate-30 4s;
 }
 
 .bar-40 .growing-bar {
 	width: 40%;
-    animation: Animate-40 4s;
+	animation: Animate-40 4s;
 }
 
 .bar-50 .growing-bar {
 	width: 50%;
-    animation: Animate-50 4s;
+	animation: Animate-50 4s;
 }
 
 .bar-60 .growing-bar {
 	width: 60%;
-    animation: Animate-60 4s;
+	animation: Animate-60 4s;
 }
 
 .bar-70 .growing-bar {
 	width: 70%;
-    animation: Animate-70 4s;
+	animation: Animate-70 4s;
 }
 
 .bar-80 .growing-bar {
 	width: 80%;
-    animation: Animate-80 4s;
+	animation: Animate-80 4s;
 }
 
 .bar-90 .growing-bar {
 	width: 90%;
-    animation: Animate-90 4s;
+	animation: Animate-90 4s;
 }
 
 .bar-100 .growing-bar {
 	width: 100%;
-    animation: Animate-100 4s;
+	animation: Animate-100 4s;
 }
 
 /* POURCENTAGE CARRE DROIT */
 
-.bar-10  .side-c {
+.bar-10 .side-c {
 	animation: Animate-side-10 4s;
 }
 
-.bar-20  .side-c {
+.bar-20 .side-c {
 	animation: Animate-side-20 4s;
 }
 
-.bar-30  .side-c {
+.bar-30 .side-c {
 	animation: Animate-side-30 4s;
 }
 
-.bar-40  .side-c {
+.bar-40 .side-c {
 	animation: Animate-side-40 4s;
 }
 
-.bar-50  .side-c {
+.bar-50 .side-c {
 	animation: Animate-side-50 4s;
 }
 
-.bar-60  .side-c {
+.bar-60 .side-c {
 	animation: Animate-side-60 4s;
 }
 
-.bar-70  .side-c {
+.bar-70 .side-c {
 	animation: Animate-side-70 4s;
 }
 
-.bar-80  .side-c {
+.bar-80 .side-c {
 	animation: Animate-side-80 4s;
 }
 
-.bar-90  .side-c {
+.bar-90 .side-c {
 	animation: Animate-side-90 4s;
 }
 
-.bar-100  .side-c {
+.bar-100 .side-c {
 	animation: Animate-side-100 4s;
 }
 
 /* ANIMATION BARS */
 
 @keyframes Animate-10 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 10%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 10%;
+	}
 }
 
 @keyframes Animate-20 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 20%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 20%;
+	}
 }
 
 @keyframes Animate-30 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 30%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 30%;
+	}
 }
 
 @keyframes Animate-40 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 40%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 40%;
+	}
 }
 
 @keyframes Animate-50 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 50%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50%;
+	}
 }
 
 @keyframes Animate-60 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 60%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 60%;
+	}
 }
 
 @keyframes Animate-70 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 70%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 70%;
+	}
 }
 
 @keyframes Animate-80 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 80%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 80%;
+	}
 }
 
 @keyframes Animate-90 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 90%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 90%;
+	}
 }
 
 @keyframes Animate-100 {
-    from {
-        width: 10px;
-    }
-    to {
-        width: 100%;
-    }
+	from {
+		width: 10px;
+	}
+	to {
+		width: 100%;
+	}
 }
 
 /* ANIMATION CARRE DROITE */
 
 @keyframes Animate-side-10 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 90%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 90%;
+	}
 }
 
 @keyframes Animate-side-20 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 80%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 80%;
+	}
 }
 
 @keyframes Animate-side-30 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 70%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 70%;
+	}
 }
 
 @keyframes Animate-side-40 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 60%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 60%;
+	}
 }
 
 @keyframes Animate-side-50 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 50%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 50%;
+	}
 }
 
 @keyframes Animate-side-60 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 40%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 40%;
+	}
 }
 
 @keyframes Animate-side-70 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 30%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 30%;
+	}
 }
 
 @keyframes Animate-side-80 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 20%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 20%;
+	}
 }
 
 @keyframes Animate-side-90 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 10%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 10%;
+	}
 }
 
 @keyframes Animate-side-100 {
-    from {
-        right: 98%;
-    }
-    to {
-        right: 0%;
-    }
+	from {
+		right: 98%;
+	}
+	to {
+		right: 0%;
+	}
 }
